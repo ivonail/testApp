@@ -1,5 +1,5 @@
 //
-//  User.swift
+//  Tag.swift
 //  TestApp
 //
 //  Created by Ivona Ilic on 3/21/25.
@@ -7,15 +7,17 @@
 
 import Foundation
 
-struct User: Codable {
-    let userId: Int?
-    let avatarUrl: String?
+struct Tag: Codable {
     let name: String?
-    
+    let commit: Commit?
     
     enum CodingKeys: String, CodingKey {
-        case userId = "id"
-        case avatarUrl = "avatar_url"
         case name
+        case commit
     }
+}
+
+struct Commit: Codable {
+    let sha: String?
+    let url: String?
 }

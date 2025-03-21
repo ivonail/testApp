@@ -10,6 +10,8 @@
 		380A939D2D8DDFCB008C86B6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 380A939C2D8DDFCB008C86B6 /* Alamofire */; };
 		380A93A22D8DE021008C86B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93A12D8DE021008C86B6 /* User.swift */; };
 		380A93AA2D8DE29D008C86B6 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93A92D8DE29D008C86B6 /* AppConfig.swift */; };
+		380A93B12D8DE86E008C86B6 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B02D8DE86E008C86B6 /* Repo.swift */; };
+		380A93B32D8DE9FB008C86B6 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B22D8DE9FB008C86B6 /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		380A93A92D8DE29D008C86B6 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		380A93AB2D8DE352008C86B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		380A93AD2D8DE375008C86B6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		380A93B02D8DE86E008C86B6 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		380A93B22D8DE9FB008C86B6 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -67,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				380A93A12D8DE021008C86B6 /* User.swift */,
+				380A93B02D8DE86E008C86B6 /* Repo.swift */,
+				380A93B22D8DE9FB008C86B6 /* Tag.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380A93B32D8DE9FB008C86B6 /* Tag.swift in Sources */,
 				380A93AA2D8DE29D008C86B6 /* AppConfig.swift in Sources */,
+				380A93B12D8DE86E008C86B6 /* Repo.swift in Sources */,
 				380A93A22D8DE021008C86B6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
