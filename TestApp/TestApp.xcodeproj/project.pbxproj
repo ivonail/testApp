@@ -12,6 +12,9 @@
 		380A93AA2D8DE29D008C86B6 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93A92D8DE29D008C86B6 /* AppConfig.swift */; };
 		380A93B12D8DE86E008C86B6 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B02D8DE86E008C86B6 /* Repo.swift */; };
 		380A93B32D8DE9FB008C86B6 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B22D8DE9FB008C86B6 /* Tag.swift */; };
+		380A93B52D8DF59E008C86B6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B42D8DF59E008C86B6 /* AppRouter.swift */; };
+		380A93B72D8DF610008C86B6 /* ReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B62D8DF610008C86B6 /* ReposView.swift */; };
+		380A93B92D8DF61F008C86B6 /* RepoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380A93B82D8DF61F008C86B6 /* RepoDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		380A93AD2D8DE375008C86B6 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		380A93B02D8DE86E008C86B6 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		380A93B22D8DE9FB008C86B6 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		380A93B42D8DF59E008C86B6 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		380A93B62D8DF610008C86B6 /* ReposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposView.swift; sourceTree = "<group>"; };
+		380A93B82D8DF61F008C86B6 /* RepoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -80,6 +86,7 @@
 		380A93A32D8DE1B9008C86B6 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				380A93B42D8DF59E008C86B6 /* AppRouter.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -87,6 +94,8 @@
 		380A93A42D8DE1C9008C86B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				380A93B62D8DF610008C86B6 /* ReposView.swift */,
+				380A93B82D8DF61F008C86B6 /* RepoDetailsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,7 +211,10 @@
 			files = (
 				380A93B32D8DE9FB008C86B6 /* Tag.swift in Sources */,
 				380A93AA2D8DE29D008C86B6 /* AppConfig.swift in Sources */,
+				380A93B92D8DF61F008C86B6 /* RepoDetailsView.swift in Sources */,
+				380A93B52D8DF59E008C86B6 /* AppRouter.swift in Sources */,
 				380A93B12D8DE86E008C86B6 /* Repo.swift in Sources */,
+				380A93B72D8DF610008C86B6 /* ReposView.swift in Sources */,
 				380A93A22D8DE021008C86B6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
