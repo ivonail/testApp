@@ -14,6 +14,7 @@ enum Screen: Hashable {
 
 
 final class AppRouter: ObservableObject {
+    
     @Published var path = NavigationPath()
     
     var startView: some View {
