@@ -76,9 +76,9 @@
 				380A93A42D8DE1C9008C86B6 /* Views */,
 				380A93A52D8DE1D7008C86B6 /* ViewModels */,
 				380A93A62D8DE1E9008C86B6 /* Services */,
+				380A93C62D8EC31C008C86B6 /* Helpers */,
 				380A93A72D8DE1F3008C86B6 /* Resources */,
 				380A93A82D8DE204008C86B6 /* Config */,
-				380A93C62D8EC31C008C86B6 /* Helpers */,
 				380A938C2D8DDF1D008C86B6 /* TestApp */,
 				380A938B2D8DDF1D008C86B6 /* Products */,
 			);
@@ -400,6 +400,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,6 +437,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Test App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
