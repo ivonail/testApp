@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct Repo: Codable {
-    let repoId: Int?
+struct Repo: Codable, Identifiable {
+    let id: Int?
     let name: String?
     let forksCount: Int?
     let watchersCount: Int?
     let openIssuesCount: Int?
     
     enum CodingKeys: String, CodingKey {
-        case repoId = "id"
+        case id
         case name
         case forksCount = "forks_count"
         case watchersCount = "watchers_count"
