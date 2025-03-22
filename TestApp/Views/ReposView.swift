@@ -18,14 +18,6 @@ struct ReposView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                Text(Constants.Strings.appTitle)
-                    .foregroundStyle(Color.accent)
-                    .font(.title2)
-                Spacer()
-            }
-            .padding([.horizontal, .top])
-            
             switch viewModel.viewState {
             case .loading:
                 ProgressView("Loading repos...")
@@ -33,7 +25,7 @@ struct ReposView: View {
             case .loaded, .partialLoaded:
                 List(viewModel.repos) { repo in
                     Button {
-                        router.push(.repoDetails)
+                        router.push(.repoDetails(repoName: repo.name ?? ""))
                     } label: {
                         HStack {
                             Text(repo.name ?? "")

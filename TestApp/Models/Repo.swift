@@ -13,6 +13,7 @@ struct Repo: Codable, Identifiable {
     let forksCount: Int?
     let watchersCount: Int?
     let openIssuesCount: Int?
+    let owner: User?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -20,5 +21,6 @@ struct Repo: Codable, Identifiable {
         case forksCount = "forks_count"
         case watchersCount = "watchers_count"
         case openIssuesCount = "open_issues_count"
+        case owner
     }
 }
