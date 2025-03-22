@@ -23,6 +23,9 @@ enum Constants {
         static let rowPadding: CGFloat = 2
         static let listSpacing: CGFloat = 3
         static let folderWidth: CGFloat = 40
+        static let tagsPadding: CGFloat = 30
+        static let imageSize: CGFloat = 140
+        static let placeholderOpacity: CGFloat = 0.3
     }
     
     enum Colors {

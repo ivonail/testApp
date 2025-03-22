@@ -79,10 +79,10 @@ final class RepoDetailsViewModel: ObservableObject {
             tags = []
             viewState = .partialLoaded(message: tagsError.localizedDescription)
             
-        case (.failure(let detailsError), .failure(let tagsError)):
+        case (.failure(let detailsError), .failure):
             repoDetails = nil
             tags = []
-            viewState = .error(message: "\(detailsError.localizedDescription)\n\(tagsError.localizedDescription)")
+            viewState = .error(message: detailsError.localizedDescription) 
         }
     }
 }

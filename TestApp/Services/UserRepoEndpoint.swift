@@ -19,9 +19,9 @@ enum UserRepoEndpoint: ApiEndpoint {
         case .repos(let user):
             return "/users/\(user)/repos"
         case .repoDetails(let repoName, let user):
-            return "/users/\(user)/\(repoName)"
+            return "/repos/\(user)/\(repoName)"
         case .tags(let repoName, let user):
-            return "/users/\(user)/\(repoName)/tags"
+            return "/repos/\(user)/\(repoName)/tags"
         }
     }
     
@@ -38,5 +38,13 @@ enum UserRepoEndpoint: ApiEndpoint {
     
     var parameters: Alamofire.Parameters? {
         return nil
+    }
+    
+    public var headers: HTTPHeaders {
+        let headers: HTTPHeaders = [
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        ]
+        return headers
     }
 }

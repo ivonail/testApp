@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Screen: Hashable {
     case repos
-    case repoDetails
+    case repoDetails(repoName: String)
 }
 
 
@@ -26,8 +26,8 @@ final class AppRouter: ObservableObject {
         switch screen {
         case .repos:
             ReposView()
-        case .repoDetails:
-            RepoDetailsView()
+        case .repoDetails(let repoName):
+            RepoDetailsView(repoName: repoName)
         }
     }
     
