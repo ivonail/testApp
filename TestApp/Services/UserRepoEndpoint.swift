@@ -10,13 +10,10 @@ import Alamofire
 
 enum UserRepoEndpoint: ApiEndpoint {
     
-    
     case repos(user: String)
     case repoDetails(repoName: String, user: String)
     case tags(repoName: String, user: String)
-    
-    
-    
+        
     var path: String {
         switch self {
         case .repos(let user):
